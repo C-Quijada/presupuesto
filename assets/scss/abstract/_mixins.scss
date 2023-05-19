@@ -1,0 +1,14 @@
+//MIXINS 
+
+//Medias Querys 
+@mixin max-width($breackpoint){
+    @media (max-width: $breackpoint) {
+        @content;
+    }
+}
+
+@mixin min-width($breackpoint){
+    @media (min-width: $breackpoint) {
+        @content;
+    }
+}

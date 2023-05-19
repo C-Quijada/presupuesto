@@ -1,0 +1,22 @@
+.boton__nuevo{
+    height: 80px;
+    width: 80px;
+    margin: 1.5em auto;
+    .mas{
+        width: 4rem;
+        height: 4rem;
+        text-align: center;
+        font-size: 3rem;
+        padding: 0;
+        margin: 1rem auto;
+        border-style: dashed; 
+        border-width: 0.1em;
+        cursor: pointer;
+       
+    }
+    .subtexto{
+        text-align: center;
+        font-size: 0.7em;
+       
+    }
+}

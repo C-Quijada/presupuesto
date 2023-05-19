@@ -1,0 +1,39 @@
+.bottom{
+    background-color: aquamarine;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    padding: 1rem;
+    display: flex;
+    align-items: baseline;
+
+    &__misPresupuestos{
+        height: 100%;
+        width: 100%;
+        background-color: orchid;
+        display: flex;
+        align-items: center;
+        h2{
+            font-size: 0.8rem;
+        }
+
+
+    }
+
+    &__nuevoPresupuesto{
+        background-color: blueviolet;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0.5rem;
+        font-size: 0.8rem;
+        margin: auto;
+        box-sizing: border-box;
+        .mas{
+            font-size: 2em;
+        }
+        .subtexto{
+            font-size: 0.7em;
+        }
+    }
+}
