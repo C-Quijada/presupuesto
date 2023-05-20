@@ -1,56 +1,107 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Presupuesto APP</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/estilos.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/estilos.css" />
+  </head>
 
-<body>
+  <body>
+    <!--Cabece que contiene el header solamente-->
     <header class="header">
-        <div class="header__logo">
-            <h1 class="header__titulo">I love my presupuesto </h1>
-        </div>
+      <div class="header__titulo">
+        <p>Q-presupuesto</p>
+      </div>
+      <div class="header__menu-mobil">
+        <img
+          src="assets/img/icon/list.svg"
+          style="fill: white"
+          width="30px"
+          height="30px"
+          alt="botton de navegacion"
+        />
+      </div>
+      <div class="header__nav d-none"></div>
     </header>
 
-    <div id="contenido_inicio" class="container">
-        <section class="portada">
-            <div class="portada__titulo">
-                <h2>Manten tus finanzas faciles y simples</h2>
-                <p>Con 'I love my presupuesto' es simple crear y guardar tus presupuestos, si podras order tus gastos y poder destinar de mejor manera tu dinero</p>
-            </div>
-            <div class="portada__parrafo">
+    <!--start app -->
+    <section class="app">
+      <div class="app__cabecera">
+        <h2>Cuerpo de la App</h2>
+        <p>Aquí puedes ver el ingreso y los gastos</p>
+      </div>
+      <!--body function -->
+      <div class="app__body">
+        <h2 class="app__titulos">Resumen</h2>
+        <table class="app__consolidado">
+          <tr>
+            <th>PRESUPUESTO</th>
+            <th>GASTOS</th>
+            <th>SALDO</th>
+          </tr>
+          <tr>
+            <td id="presupuesto">$ <span>0</span></td>
+            <td id="gastoTotal">$ <span>0</span></td>
+            <td id="saldo">$ <span>0</span></td>
+          </tr>
+        </table>
+        <!--Inicio segunda tabla con la descripcion de los gastos-->
+        <h2 class="app__titulos">Descripcion de gastos</h2>
+        <table class="app__descricion">
+          <tr>
+            <th>Gasto</th>
+            <th>Valor</th>
+            <th></th>
+          </tr>
+          <tr>
+            <td id="nombreGasto">$ <span>0</span></td>
+            <td id="gastos">$ <span>0</span></td>
+            <td id="borrar">
+              <img src="assets/img/icon/trash3.svg" alt="bote de basura" />
+            </td>
+          </tr>
+        </table>
+      </div>
 
+      <!--botones que llaman a la nueva opcion -->
+      <div class="app__acciones">
+        <div class="agregar_presupuesto">
+          <form action="" id="agregar_presupuesto">
+            <div class="form__group">
+              <label for="presupuesto">Ingresa tu presupuesto</label>
+              <input type="text" id="monto_presupuesto" />
             </div>
 
-            <div class="portada__callToAction">
-                <p>Comienza con tu primer presupuesto con nosotros, has click en + </p>
-                
-                <div class="boton__nuevo">
-                    <p class="mas">+</p>
-                    <p class="subtexto">Nuevo presupuesto</p>
-                </div>
-                
-            </div>
-        </section>
-
-       <section class="bottom">
-        <div class="bottom__misPresupuestos">
-            <h2>Mis Presupuestos</h2>
+            <input type="submit" class="btn" value="Calcular" />
+          </form>
         </div>
 
-        <div class="bottom__nuevoPresupuesto">
-            <p class="mas">+</p>
-            <p class="subtexto">Nuevo presupuesto</p>
-        </div>
-       </section>
-    </div>
-</body>
+        <div class="agregar_gasto">
+          <form action="" id="agregar_presupuesto">
+            <div class="form__group">
+              <label for="presupuesto">Ingresa el nombre del gasto</label>
+              <input type="text" />
+            </div>
 
+            <div class="form__group">
+              <label for="presupuesto">Ingresa la cantidad del gasto</label>
+              <input type="text" />
+            </div>
+
+            <input type="submit" class="btn" value="Agregar Gasto" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/js/myscript.js"></script>
+  </body>
 </html>

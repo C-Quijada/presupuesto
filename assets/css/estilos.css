@@ -7,94 +7,94 @@
   font-family: "Inter", sans-serif;
 }
 
+.d-none {
+  display: none !important;
+}
+
 .container {
   width: 100%;
+  box-sizing: border-box;
 }
 
 .header {
-  background-color: orange;
-  height: 5rem;
-  padding: 1.5rem 0 0 0.8rem;
+  background-color: rgb(245, 221, 5);
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
   box-sizing: border-box;
+  color: red;
+  font-weight: bold;
 }
-.header__titulo {
-  font-size: 1.2rem;
+.header__menu-mobil {
+  padding: 0;
+  display: inline-block;
+}
+.header__menu-mobil img {
+  color: white;
 }
 
-.portada {
+.btn {
+  background-color: rgba(255, 255, 255, 0.301);
+  padding: 0.5em;
+  border: 1px rgba(0, 0, 0, 0.211) solid;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 13px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.app__cabecera {
+  margin-bottom: 1rem;
+}
+.app__consolidado {
+  margin-bottom: 2rem;
+}
+.app__cabecera, .app__body, .app__consolidado, .app__descricion {
   padding: 1rem;
 }
-.portada__titulo {
-  margin-bottom: 0.5rem;
-}
-.portada__titulo p {
-  font-size: 0.8em;
-}
-.portada__callToAction {
-  margin: 2rem auto;
-  background-color: beige;
-  padding: 1.2rem;
-}
-.portada__callToAction p {
-  font-size: 0.7em;
-  text-align: left;
-}
-
-.boton__nuevo {
-  height: 80px;
-  width: 80px;
-  margin: 1.5em auto;
-}
-.boton__nuevo .mas {
-  width: 4rem;
-  height: 4rem;
-  text-align: center;
-  font-size: 3rem;
-  padding: 0;
-  margin: 1rem auto;
-  border-style: dashed;
-  border-width: 0.1em;
-  cursor: pointer;
-}
-.boton__nuevo .subtexto {
-  text-align: center;
-  font-size: 0.7em;
-}
-
-.bottom {
-  background-color: aquamarine;
+.app__acciones {
   position: fixed;
   bottom: 0;
-  width: 100vw;
-  padding: 1rem;
-  display: flex;
-  align-items: baseline;
-}
-.bottom__misPresupuestos {
-  height: 100%;
+  z-index: 5;
   width: 100%;
-  background-color: orchid;
-  display: flex;
-  align-items: center;
-}
-.bottom__misPresupuestos h2 {
-  font-size: 0.8rem;
-}
-.bottom__nuevoPresupuesto {
-  background-color: blueviolet;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  padding: 0;
+  margin: 0;
   padding: 0.5rem;
-  font-size: 0.8rem;
-  margin: auto;
   box-sizing: border-box;
 }
-.bottom__nuevoPresupuesto .mas {
-  font-size: 2em;
+.app__acciones .agregar_presupuesto, .app__acciones .agregar_gasto {
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
 }
-.bottom__nuevoPresupuesto .subtexto {
-  font-size: 0.7em;
+.app__acciones .agregar_presupuesto {
+  border: 1px green solid;
+  background-color: rgb(224, 255, 224);
+}
+.app__acciones .agregar_gasto {
+  border: 1px red solid;
+  background-color: rgb(255, 224, 224);
+}
+.app__titulos {
+  font-size: 1rem;
+}
+
+.form__group {
+  margin-bottom: 0.5rem;
 }
 
 /*# sourceMappingURL=estilos.css.map */

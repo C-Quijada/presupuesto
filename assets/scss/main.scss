@@ -6,6 +6,7 @@
 //base
     @import 'base/reset';
     @import 'base/fuentes';
+    @import 'base/helpers';
 //layout
     @import 'layout/grid';
 //component
@@ -13,7 +14,8 @@
     @import 'component/portada';
     @import 'component/button_nuevo';
     @import 'component/bottom';
-
+    @import 'component/tabla';
+    @import 'component/app';
 //page
 
 //themes
